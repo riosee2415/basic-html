@@ -1,0 +1,65 @@
+@keyframes btnAni {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+}
+
+@keyframes auto {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body {
+  font-family: "Bangers", cursive;
+}
+
+h1 {
+  animation: auto 1s infinite;
+}
+
+.rainbow tr td {
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  border: none;
+  width: 80px;
+  height: 30px;
+  background-color: yellow;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: yellow;
+}
+
+.btn2 {
+  border: none;
+  width: 80px;
+  height: 30px;
+  background-color: hotpink;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn2:hover {
+  animation: btnAni 1.5s infinite;
+}
